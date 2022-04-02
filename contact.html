@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT</title>
+
+    <!-- Custom style -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <script src="scripts/contact.js"></script>
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <strong>Felix Hirwa Nshuti</strong>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul class="nav">
+                    <li><a href="home.html">HOME</a> </li>
+                    <li><a href="skills.html">SKILLS</a> </li>
+                    <li><a href="blogs.html">Blogs</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+    </section>
+
+    <!----------Contact me form----------->
+    <section class="contact">
+        <div class="content">
+            <h2>Contact me</h2>
+            <p>Drop a message for more information</p>
+        </div>
+
+        <div class="container">
+            <div class="contactInfo">
+                <div class="box">
+                    <div class="icon"><i class="fa fa-map-marker"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Adress</h3>
+                        <p>Pandit Deendayal Energy University</p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="icon"><i class="fa fa-phone"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>+919173639927</p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="icon"><i class="fa fa-envelope-o"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>hirwanshutiflx.@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contactform">
+                <form id="form" action="" method="post">
+
+                    <h2>Get In Touch</h2>
+                    <div class="inputBox">
+                        <input type="text" name="user-name" required="required">
+                        <span>Full Name</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="user-email" id='email' required="required" onkeydown="validation()">
+                        <span id="text">Email</span>
+                    </div>
+                    <div class="inputBox">
+                        <textarea name="message" required="required"></textarea>
+                        <span>Type your Message...</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" name="" value="Send">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-------------Footer------------------->
+
+    <section class="footer">
+
+        <h4>Can we keep connected</h4>
+        <p>The most interesting thing about me is that I like to learn from people arround me. And if you still reading
+            this one is for you
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">My people</a>
+            <br> My Social media <i class="fa fa-hand-o-down"></i>
+
+        </p>
+
+
+        <div class="icons">
+            <a href="https://github.com/hirwa-nshuti" target="_blank"><i class="fa fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/hirwa-nshuti/" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <a href="https://twitter.com/__hirwa" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.instagram.com/hirwaaaa.n/" target="_blank"><i class="fa fa-instagram"></i></a>
+
+        </div>
+        <p>Made with <i class="fa fa-heart"></i> &#169; <script>
+                document.write(/\d{4}/.exec(Date())[0])
+            </script> Felix Hirwa Nshuti</p>
+    </section>
+
+    <!------------Javascript for toggle menu-------------->
+    <script type="text/javascript">
+        var navLinks = document.getElementById("navlinks");
+
+        function showmenu() {
+            navLinks.style.top = "0"
+        }
+
+        function hidemenu() {
+            navLinks.style.top = "-300px"
+        }
+    </script>
+</body>
+
+</html>

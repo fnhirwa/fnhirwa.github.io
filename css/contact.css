@@ -1,0 +1,348 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    background-image: linear-gradient(rgba(20, 19, 20, 0.7), rgba(4, 9, 30, 0.7)),
+    url("../images/background.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: block;
+}
+
+nav {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-content: space-between;
+    text-align: center;
+}
+
+nav strong {
+    font-size: 5vh;
+    font-family: Aladin, cursive;
+    color: rgb(255, 255, 255);
+}
+
+
+.nav {
+    border: 1px solid #ccc;
+    background-color: #000;
+    border-width: 1px 0;
+    list-style: none;
+    margin: 1em;
+    padding: 1em;
+    text-align: center;
+}
+
+.nav li {
+    display: inline;
+}
+
+.nav a {
+    display: inline-block;
+    padding: 10px;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px, 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #f44346;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+
+
+}
+
+nav .fa {
+    display: none;
+}
+
+
+
+
+/*-----------------Footer CSS-----*/
+
+
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background: #fff;
+}
+
+.footer h4 {
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.icons .fa {
+    color: #f44346;
+    margin-bottom: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+    font-size: 30px;
+}
+
+.fa-heart {
+    color: #f44346;
+}
+
+.fa-hand-o-down {
+    color: #a1620f;
+    font-size: 50px;
+}
+
+@media(max-width:700px) {
+    .tex-box h1 {
+        font-size: 20px;
+    }
+
+    .nav-links ul li {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        background: rgb(16, 17, 17);
+        width: 100%;
+        top: 0;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    nav .fa {
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .nav-links ul {
+        padding: 40px;
+    }
+
+    /*---------Contact form--------*/
+    .contact {
+        padding: 50px;
+    }
+
+    .contact .content h2 {
+        font-size: 25px;
+        font-weight: 500;
+        color: #fff;
+    }
+
+    .contact .content p {
+        font-weight: 300;
+        color: #fff;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .contactInfo {
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+
+    }
+    .container .contactInfo .box 
+    {
+        width: 100%;
+    }
+
+    .container .contactInfo .box .icon {
+        min-width: 30px;
+        height: 30px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        font-size: 22px;
+    }
+
+    .container .contactInfo .box .text {
+        display: block;
+        margin-left: 20px;
+        font-size: 16px;
+        color: #fff;
+        flex-direction: column;
+        font-weight: 300;
+    }
+    .contactform h2 {
+        font-size: 25px;
+    }
+}
+
+/*------------Contact details CSS------*/
+.contact {
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(20, 19, 20, 0.7), rgba(4, 9, 30, 0.7)),
+    url("../images/background.jpg");
+    background-size: cover;
+
+
+}
+
+.contact .content {
+    text-align: center;
+}
+
+.contact .content h2 {
+    font-size: 25px;
+    font-weight: 600;
+    color: rgb(243, 235, 235);
+}
+
+.contact .content p {
+    font-weight: 300;
+    color: #fff;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    margin-top: 30px;
+}
+
+.container .contactInfo {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .contactInfo .box {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.container .contactInfo .box .icon {
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+.container .contactInfo .box .text {
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.container .contactInfo .box .text h3 {
+    font-weight: 500;
+    color: #00bcd4;
+}
+
+
+.contactform {
+    padding: 1em;
+    background: rgb(224, 220, 220);
+    width: 100%;
+}
+
+.contactform h2 {
+    font-size: 30px;
+    color: #333;
+    text-align: center;
+    font-weight: 300;
+    flex-direction: column;
+}
+
+.contactform .inputBox {
+    position: relative;
+    width: 100%;
+    padding-top: .5em;
+    margin-top: 10px;
+}
+
+.contactform .inputBox input,
+.contactform .inputBox textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px o;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+
+}
+.contactform .inputBox textarea {
+    height:200px;
+}
+
+
+.contactform .inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px o;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+
+.contactform .inputBox input:focus~span,
+.contactform .inputBox input:valid~span,
+.contactform .inputBox textarea:focus~span,
+.contactform .inputBox textarea:valid~span {
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.contactform .inputBox input[type="submit"] {
+    width: 100px;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+
+}

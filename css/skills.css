@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    background-image: linear-gradient(rgba(20, 19, 20, 0.7), rgba(4, 9, 30, 0.7)),
+    url("../images/background.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: block;
+}
+
+nav {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-content: space-between;
+    text-align: center;
+}
+
+nav strong {
+    font-size: 5vh;
+    font-family: Aladin, cursive;
+    color: rgb(255, 255, 255);
+}
+
+
+.nav {
+    border: 1px solid #ccc;
+    background-color: #000;
+    border-width: 1px 0;
+    list-style: none;
+    margin: 1em;
+    padding: 1em;
+    text-align: center;
+}
+
+.nav li {
+    display: inline;
+}
+
+.nav a {
+    display: inline-block;
+    padding: 10px;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px, 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #f44346;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+
+
+}
+
+nav .fa {
+    display: none;
+}
+
+
+/*-----------------Footer CSS-----*/
+
+
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background: #fff;
+}
+
+.footer h4 {
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+
+}
+
+.icons .fa {
+    color: #f44346;
+    margin-bottom: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+    font-size: 30px;
+}
+
+.fa-heart {
+    color: #f44346;
+}
+
+.fa-hand-o-down {
+    color: #a1620f;
+    font-size: 50px;
+}
+
+/*Skills section Css*/
+
+.Skills {
+
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-image: linear-gradient(rgba(20, 19, 20, 0.7), rgba(4, 9, 30, 0.7)),
+    url("../images/background.jpg");
+}
+
+.Skills .description {
+    color: rgb(224, 215, 215);
+    width: 80%;
+    margin: auto;
+}
+
+.Skills h1 {
+    color: rgb(245, 239, 239);
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.Skills p {
+    color: #000;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row {
+    height: auto;
+    margin-top: 5%;
+    justify-content: space-between;
+    padding: 2em;
+}
+
+.skill-type {
+
+    width: 70%;
+    margin: 1em;
+    background-color: #ccc;
+    border-radius: 10px;
+    padding-bottom: 1em;
+    box-sizing: border-box;
+}
+
+.skill-type h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.skill-type:hover {
+    box-shadow: 0 0 20px 0px rgb(0, 0, 0, 0.6);
+}
+
+
+/*---------projects CSS----------*/
+
+.projects {
+    background: rgb(43, 37, 37);
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 2em;
+    background-size: cover;
+}
+
+.projects h1 {
+    font-size: 36px;
+    font-weight: 600;
+    color: rgb(245, 239, 239);
+}
+
+.projects p {
+    color: rgb(224, 215, 215);
+    width: 80%;
+    margin: auto;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row-proje {
+    margin-top: 5%;
+    justify-content: space-between;
+}
+.tech-n-soft{
+    display: flex;
+    padding-bottom: 3em;
+}
+.row {
+    display: grid;
+    grid-template-columns: repeat(3, calc(100% / 3));
+}
+
+.col {
+    display: block;
+}
+
+.project-name {
+
+    flex-basis: 31%;
+    width: 80%;
+    margin: auto;
+    background: rgb(49, 48, 48);
+    color: #fff;
+    padding: 20px 12px;
+}
+
+.card img {
+    object-fit: inherit;
+    width: 80%;
+    height: 70%;
+    margin: auto;
+}
+
+.project-name:hover {
+    box-shadow: 0 0 20px 0px rgba(236, 232, 232, 0.6);
+}
+
+/*-------------Responsive CSS--------*/
+
+@media(max-width:700px) {
+    .tex-box h1 {
+        font-size: 20px;
+    }
+
+    .nav-links ul li {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        background: rgb(16, 17, 17);
+        width: 100%;
+        top: 0;
+        text-align: left;
+        z-index: 1;
+        transition: 1s;
+    }
+
+    nav .fa {
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .nav-links ul {
+        padding: 30px;
+    }
+
+    .skill-type {
+
+        width: 100%;
+        margin: 1em;
+        background-color: #ccc;
+    }
+
+    .tech-n-soft{
+        flex-direction: column;
+        align-items: center;       
+    }
+
+    .row {
+        display: block;
+        align-items: center;
+    }
+
+    .col {
+        width: 80%;
+        padding: 1em;
+        margin: auto;
+    }
+
+}
