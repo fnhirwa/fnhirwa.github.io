@@ -159,6 +159,9 @@ nav .fa {
 }
 
 @media(max-width:700px) {
+    html, body {
+        overflow-x: hidden;
+    }
     .tex-box h1 {
         font-size: 20px;
     }
@@ -193,10 +196,6 @@ nav .fa {
         flex-direction: column;
     }
 
-    .background p {
-        width: auto;
-        text-align: center;
-    }
 
 }
 
@@ -227,6 +226,7 @@ nav .fa {
     text-align: justify;
     padding: 1em;
     margin: auto;
+    word-spacing: normal;
 }
 
 .back,
