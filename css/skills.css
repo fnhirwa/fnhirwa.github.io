@@ -51,7 +51,7 @@ nav strong {
 .nav-links ul li {
     list-style: none;
     display: inline-block;
-    padding: 8px, 12px;
+    padding: 8px 12px;
     position: relative;
 }
 
@@ -102,7 +102,7 @@ nav .fa {
 
 .icons .fa {
     color: #f44346;
-    margin-bottom: 0 13px;
+    margin-bottom: 13px;
     cursor: pointer;
     padding: 18px 0;
     font-size: 30px;

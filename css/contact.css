@@ -51,7 +51,7 @@ nav strong {
 .nav-links ul li {
     list-style: none;
     display: inline-block;
-    padding: 8px, 12px;
+    padding: 8px 12px;
     position: relative;
 }
 
@@ -103,7 +103,7 @@ nav .fa {
 
 .icons .fa {
     color: #f44346;
-    margin-bottom: 0 13px;
+    margin-bottom: 13px;
     cursor: pointer;
     padding: 18px 0;
     font-size: 30px;
@@ -292,7 +292,7 @@ nav .fa {
     width: 100%;
     padding: 5px 0;
     font-size: 16px;
-    margin: 10px o;
+    margin: 10px 0;
     border: none;
     border-bottom: 2px solid #333;
     outline: none;
@@ -310,7 +310,7 @@ nav .fa {
     left: 0;
     padding: 5px 0;
     font-size: 16px;
-    margin: 10px o;
+    margin: 10px 0;
     pointer-events: none;
     transition: 0.5s;
     color: #666;
