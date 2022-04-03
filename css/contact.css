@@ -23,6 +23,7 @@ nav {
 }
 
 nav strong {
+    width: 80%;
     font-size: 5vh;
     font-family: Aladin, cursive;
     color: rgb(255, 255, 255);
@@ -34,7 +35,6 @@ nav strong {
     background-color: #000;
     border-width: 1px 0;
     list-style: none;
-    margin: 1em;
     padding: 1em;
     text-align: center;
 }
@@ -90,6 +90,7 @@ nav .fa {
 .footer {
     width: 100%;
     text-align: center;
+    justify-content: center;
     padding: 30px 0;
     background: #fff;
 }
@@ -121,10 +122,14 @@ nav .fa {
     .tex-box h1 {
         font-size: 20px;
     }
-
-
+    nav strong {
+        width: 80%;
+        font-size: medium;
+    }
+    
+    
     .nav-links {
-        position: absolute;
+        position: fixed;
         background: rgb(16, 17, 17);
         width: 100%;
         top: 0;
@@ -150,7 +155,19 @@ nav .fa {
     }
     /*---------Contact form--------*/
     .contact{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+
+    }
+    .container{
         width: 100%;
+
+
+    }
+    .contactInfo{
+        width: 100%;
+        margin-top: 40px;
     }
     .contact .content h2 {
         font-size: 25px;
@@ -162,25 +179,11 @@ nav .fa {
         font-weight: 300;
         color: #fff;
     }
-
-    .container {
+    .contactform{
         width: 100%;
-        flex-direction: column;
-        margin: 0;
-    }
+        margin-left: 7em;
+        margin-right: 3em;
 
-    .container .contactInfo .box .icon {
-        min-width: 15px;
-        height: 15px;
-        background: #fff;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 50%;
-        font-size: 14px;
-    }
-    .box{
-        flex-direction: column;
     }
     .text {
         display: flex;
@@ -192,71 +195,64 @@ nav .fa {
     .contactform h2 {
         font-size: 25px;
     }
+
+    .footer{
+        width: 70%;
+        justify-content: center;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
 }
 
 /*------------Contact details CSS------*/
 .contact {
     position: relative;
     min-height: 100vh;
-    padding: 50px 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-right: 10em;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     background-image: linear-gradient(rgba(20, 19, 20, 0.7), rgba(4, 9, 30, 0.7)),
         url("../images/background.jpg");
     background-size: cover;
-
-
 }
-
-.contact .content {
-    text-align: center;
-}
-
-.contact .content h2 {
-    font-size: 25px;
-    font-weight: 600;
-    color: rgb(243, 235, 235);
-}
-
-.contact .content p {
-    font-weight: 300;
-    color: #fff;
-}
-
-.container {
+.container{
     width: 100%;
-    display: flex;
-    margin-top: 30px;
+    margin-left: 7em;
+}
+.box{
+    padding: .5em;
+}
+.text{
+    padding-bottom: 1em;
+}
+.contactInfo{
+    width: 100%;
+    margin-top: 100px;
 }
 
-.container .contactInfo {
-    width: 40%;
-    display: flex;
-    flex-direction: column;
+.contactInfo .cont-header{
+    margin-left: 1em;
+    color: #fff;
+    font-size: 32px;
+    font-weight: 500;
 }
-
-.container .contactInfo .box {
-    position: relative;
-    padding: 20px 0;
-    display: flex;
-}
-
-.container .contactInfo .box .icon {
-    min-width: 60px;
-    height: 60px;
+.contactInfo .box .icon {
+    width: 200px;
+    height: 50px;
     background: #fff;
-    display: flex;
+    border-radius: 25%;
     justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    font-size: 22px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    color: #00bcd4;
 }
 
 .container .contactInfo .box .text {
     display: flex;
-    margin-left: 20px;
     font-size: 16px;
     color: #fff;
     flex-direction: column;
@@ -273,6 +269,7 @@ nav .fa {
     padding: 1em;
     background: rgb(224, 220, 220);
     width: 100%;
+
 }
 
 .contactform h2 {

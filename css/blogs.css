@@ -24,6 +24,7 @@ nav {
 }
 
 nav strong {
+    width: 80%;
     font-size: 5vh;
     font-family: Aladin, cursive;
     color: rgb(255, 255, 255);
@@ -35,7 +36,6 @@ nav strong {
     background-color: #000;
     border-width: 1px 0;
     list-style: none;
-    margin: 1em;
     padding: 1em;
     text-align: center;
 }
@@ -81,6 +81,7 @@ nav strong {
 nav .fa {
     display: none;
 }
+
 
 /*----------------Blogs------*/
 .blogs-intro{
@@ -132,12 +133,16 @@ nav .fa {
 }
 
 @media(max-width:700px) {
+    nav strong {
+        width: 80%;
+        font-size: medium;
+    }
     .nav-links ul li {
         display: block;
     }
 
     .nav-links {
-        position: absolute;
+        position: fixed;
         background: rgb(16, 17, 17);
         width: 100%;
         top: 0;
