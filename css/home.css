@@ -8,7 +8,7 @@
     min-height: 100vh;
     width: 100%;
     background-image: linear-gradient(hsla(300, 3%, 8%, 0.7), rgba(4, 9, 30, 0.7)),
-    url("../images/background.jpg");
+        url("../images/background.jpg");
     background-position: center;
     background-size: cover;
     position: relative;
@@ -159,14 +159,17 @@ nav .fa {
 }
 
 @media(max-width:700px) {
-    html, body {
+
+    html,
+    body {
         overflow-x: hidden;
     }
+
     nav strong {
         width: 80%;
         font-size: medium;
     }
-       
+
     .tex-box h1 {
         font-size: 20px;
     }
@@ -195,6 +198,12 @@ nav .fa {
 
     .nav-links ul {
         padding: 40px;
+    }
+
+    .back,
+    .education {
+        font-size: .8em;
+        text-align: center;
     }
 
     .row {
@@ -228,8 +237,6 @@ nav .fa {
 
 .background p {
     width: 65%;
-    text-align: justify;
-    padding: 1em;
     margin: auto;
     word-spacing: normal;
 }
