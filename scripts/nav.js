@@ -8,3 +8,14 @@ window.onscroll = function () {
     }
     prevScrollpos = currentScrollPos;
 }
+
+
+function showmenu() {
+    var navLinks = document.getElementById("navlinks");
+    navLinks.style.top = "0"
+}
+
+function hidemenu() {
+    var navLinks = document.getElementById("navlinks");
+    navLinks.style.top = "-400px"
+}
