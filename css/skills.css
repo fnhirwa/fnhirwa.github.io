@@ -195,54 +195,6 @@ nav .fa {
     color: rgb(245, 239, 239);
 }
 
-.projects p {
-    color: rgb(224, 215, 215);
-    width: 80%;
-    margin: auto;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 22px;
-    padding: 10px;
-}
-
-.row-proje {
-    margin-top: 5%;
-    justify-content: space-between;
-}
-.tech-n-soft{
-    display: flex;
-    padding-bottom: 3em;
-}
-.row {
-    display: grid;
-    grid-template-columns: repeat(3, calc(100% / 3));
-}
-
-.col {
-    display: block;
-}
-
-.project-name {
-
-    flex-basis: 31%;
-    width: 80%;
-    margin: auto;
-    background: rgb(49, 48, 48);
-    color: #fff;
-    padding: 20px 12px;
-}
-
-.card img {
-    object-fit: inherit;
-    width: 80%;
-    height: 70%;
-    margin: auto;
-}
-
-.project-name:hover {
-    box-shadow: 0 0 20px 0px rgba(236, 232, 232, 0.6);
-}
-
 /*-------------Responsive CSS--------*/
 
 @media(max-width:700px) {
@@ -286,21 +238,7 @@ nav .fa {
         margin: 1em;
         background-color: #ccc;
     }
-
-    .tech-n-soft{
-        flex-direction: column;
-        align-items: center;       
-    }
-
-    .row {
-        display: block;
-        align-items: center;
-    }
-
-    .col {
+    .row-proje{
         width: 80%;
-        padding: 1em;
-        margin: auto;
     }
-
 }
