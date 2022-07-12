@@ -195,6 +195,19 @@ nav .fa {
     color: rgb(245, 239, 239);
 }
 
+.tech-n-soft{
+    display: flex;
+    padding-bottom: 3em;
+}
+.row {
+    display: grid;
+    grid-template-columns: repeat(3, calc(100% / 3));
+}
+
+.col {
+    display: block;
+}
+
 /*-------------Responsive CSS--------*/
 
 @media(max-width:700px) {
@@ -238,7 +251,17 @@ nav .fa {
         margin: 1em;
         background-color: #ccc;
     }
+
+    .tech-n-soft{
+        flex-direction: column;
+        align-items: center;       
+    }
+
     .row-proje{
-        width: 80%;
+        margin: auto;
+    }
+
+    .images{
+        width: 300px;
     }
 }
