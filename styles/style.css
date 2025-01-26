@@ -4,7 +4,7 @@
   --link-color: #1772d0;  /* Link color */
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
     --bg-color: #181a1b;  /* Dark mode background color */
     --text-color: #e4e6eb; /* Dark mode text color */
