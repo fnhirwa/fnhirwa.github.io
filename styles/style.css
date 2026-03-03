@@ -120,3 +120,55 @@ name {
 .fab:hover, .fas:hover {
   color: #0077b5; /* Change color on hover (e.g., LinkedIn blue) */
 }
+
+/* Reduce excessive spacing inside list items */
+li h3, li h4 {
+  margin: 2px 0;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 14px;
+}
+
+ul {
+  padding-left: 20px;
+  margin: 6px 0;
+}
+
+/* Research section paper/talk entries */
+.research-entry {
+  margin-bottom: 14px;
+}
+
+.research-entry .paper-title {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.research-entry .paper-meta {
+  color: #666;
+  font-size: 13px;
+  margin-top: 2px;
+}
+
+.research-entry .paper-venue {
+  font-style: italic;
+}
+
+.interest-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 10px 0;
+}
+
+.interest-list li {
+  margin-bottom: 8px;
+  padding-left: 0;
+  line-height: 1.5;
+}
+
+.interest-label {
+  font-weight: bold;
+  color: #1772d0;
+}
