@@ -1,1 +1,4 @@
-others/resume    others/resume-redirect.html
+/resume                    /assets/resume.pdf           301
+/others/resume             /resume                      301
+/slides/*                  /assets/:splat.pdf           301
+/assets/transisapdf        /slides/transisa_slides      301
