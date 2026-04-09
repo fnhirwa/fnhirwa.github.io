@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Opening Slides...</title>
+</head>
+<body>
+  <p>Opening slides...</p>
+  <script>
+    (function () {
+      const params = new URLSearchParams(window.location.search);
+      const file = params.get("file");
+
+      // Allow only safe file slugs so we don't generate unsafe paths.
+      if (!file || !/^[a-zA-Z0-9_-]+$/.test(file)) {
+        document.body.innerHTML = "<p>Invalid slides URL. Use /slides/?file=your_pdf_name</p>";
+        return;
+      }
+
+      window.location.replace("/assets/" + file + ".pdf");
+    })();
+  </script>
+</body>
+</html>

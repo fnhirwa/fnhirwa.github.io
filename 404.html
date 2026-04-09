@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Redirecting...</title>
+</head>
+<body>
+  <p>Redirecting...</p>
+  <script>
+    (function () {
+      const path = window.location.pathname;
+
+      // Keep resume URL variants working on GitHub Pages.
+      if (/^\/(resume|others\/resume)(\.html)?\/?$/.test(path)) {
+        window.location.replace("/assets/resume.pdf");
+        return;
+      }
+
+      // Support clean slide URLs like /slides/transisa_slides.
+      const slideMatch = path.match(/^\/slides\/([a-zA-Z0-9_-]+)\/?$/);
+      if (slideMatch) {
+        const file = slideMatch[1];
+        window.location.replace("/slides/?file=" + encodeURIComponent(file));
+        return;
+      }
+
+      document.body.innerHTML =
+        '<p>Page not found. Go back to <a href="/">home</a>.</p>';
+    })();
+  </script>
+</body>
+</html>
